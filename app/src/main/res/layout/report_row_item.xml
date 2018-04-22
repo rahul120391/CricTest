@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    app:contentPadding="@dimen/dimen_10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            tool:text="@string/name"
+
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_16sp"
+            tool:text="@string/dosage" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDosage"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@+id/tvEdit"
+            android:textSize="@dimen/dimen_16sp"
+            tool:text="@string/date_time" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvStatus"
+            android:layout_alignParentRight="true"
+            android:text="@string/edit"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateTime"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@+id/tvEdit"
+            android:textSize="@dimen/dimen_16sp"
+            tool:text="@string/status" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
